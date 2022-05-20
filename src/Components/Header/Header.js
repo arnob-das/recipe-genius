@@ -53,7 +53,7 @@ const Header = () => {
                 </Container>
             </Navbar>
             {meals.length === 0 &&
-                <div class="d-flex align-items-center justify-content-center spinner">
+                <div className="d-flex align-items-center justify-content-center spinner">
                     <Button variant="primary" disabled>
                         <Spinner
                             as="span"

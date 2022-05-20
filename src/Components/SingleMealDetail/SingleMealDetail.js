@@ -11,7 +11,7 @@ const SingleMealDetail = (props) => {
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
             .then(res => res.json())
             .then(data => setSingleMealDetail(data.meals))
-    }, [])
+    }, [mealId])
 
     const btnNavigator = useNavigate();
     const backBtnHandler = () => {
@@ -23,7 +23,7 @@ const SingleMealDetail = (props) => {
         <Container>
             <Navigation />
             {singleMealDetail.length === 0 &&
-                <div class="d-flex align-items-center justify-content-center spinner">
+                <div className="d-flex align-items-center justify-content-center spinner">
                     <Button variant="primary" disabled>
                         <Spinner
                             as="span"
