@@ -1,0 +1,12 @@
+.meal-detail{
+    width: 250px!important;
+    background: #fff;
+    margin: 20px 10px!important;
+    padding: 0px!important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.see-details{
+    background: #F8A607!important;
+    width: 100%;
+}
